@@ -595,7 +595,7 @@ Show the link that contains should open and close the icon */
 }
 
 /*文字*/
-@media screen and (min-width: 1500px){
+@media screen and (min-width: 1920px){
     
     .article-content{
         line-height: 2;
