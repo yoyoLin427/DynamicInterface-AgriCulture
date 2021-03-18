@@ -25,12 +25,12 @@
                 <a class="link" href="#anchor2">合作農家</a>
                 <a class="link" href="#anchor3">關於我們</a>
                 <a class="link" href="#anchor4">聯絡我們</a>
-                <a class="link" href="#anchor3">常見問題集</a>
+                <a class="link" href="QA.html">常見問題集</a>
 
                 <!--南瓜和加入按鈕-->
                 <div id="join">
                     <img id="pumpkin" src="assets/img/3239345.svg">
-                    <div id="btn-join">現在就加入</div>
+                    <div id="btn-join" onclick="document.getElementById('id01').style.display='block'">現在就加入</div>
                 </div>
 
                 <!--hamburger menu button(<798px)-->
@@ -49,7 +49,7 @@
             <a class="link" href="#anchor2" onclick="CloseMenu()">合作農家</a>
             <a class="link" href="#anchor3" onclick="CloseMenu()">關於我們</a>
             <a class="link" href="#anchor4" onclick="CloseMenu()">聯絡我們</a>
-            <da class="link" href="#anchor3" onclick="CloseMenu()">常見問題集</a>
+            <a class="link" href="QA.html" onclick="CloseMenu()">常見問題集</a>
         </div>
 
         <div class="content-padding" id="top-content">
@@ -233,12 +233,89 @@
             </div>
             
         </div>
-        
+        <button onclick="topFunction()" id="myBtn" class="fa fa-chevron-up btn-top"></button>
         
 
 
 
-        
+        <div id="id01" class="modal">
+  
+            <form class="modal-content animate" action="/action_page.php" method="post">
+            <div class="container" id="form-join-top" style="border-bottom: 1px solid #7e7e7e6b;">
+                <div id="form-join-title">我要加入! <img id="form-pumpkin" src="assets/img/3239345.svg"></div>
+                
+                
+            </div>
+              
+          
+              <div class="container" id="form-left">
+                
+                <input type="text" placeholder="姓名" name="uname" required>
+
+                <input type="password" placeholder="電話" name="psw" required>
+                
+                  
+            
+               
+              </div>
+              <div class="container" id="form-left">
+                
+                <input type="text" placeholder="電子信箱" name="uname" required>
+              </div>
+              <div class="container" id="form-left" >
+                    <div style="color: #404040;font-size: 16px;margin-top: 5px;">方案選擇</div>
+                    <div style="color: #707070;font-size: 10px;margin-top: 5px;margin-bottom: 10px;">
+                        一塊田100平方公尺，產出與價格因作物而異
+                    </div>
+                    <div class="check-box">
+                        <input  type="checkbox"  name="remember"> 認養一塊
+                    </div>
+                    <div class="check-box">
+                        <input  type="checkbox"  name="remember"> 認養兩塊
+                    </div>
+                    <div class="check-box">
+                        <input  type="checkbox"  name="remember"> 認養三塊
+                    </div>
+                
+                
+                
+                </div>
+                <div class="container" id="form-left">
+                
+                    <input type="text" placeholder="聯絡地址" name="uname" required>
+    
+                    <input type="password" placeholder="收貨地址" name="psw" required>
+                    <div class="check-box">
+                        <input  type="checkbox"  name="remember"> 同聯絡地址
+                    </div>
+                      
+                
+                   
+                </div>
+          
+              <div class="container">
+                <button type="button" onclick="document.getElementById('id01').style.display='none';document.getElementById('id02').style.display='block'" class="cancelbtn">加入</button>
+                
+              </div>
+            </form>
+          </div>
+          <div id="id02" class="modal">
+            
+            <form class="modal-content animate" action="/action_page.php" method="post">
+                <div class="container"  >
+                    <div style="color: #689F38;;font-size: 22px;font-weight: bold;margin: 20px;">
+                        感謝您的參與，讓台灣的土地有更多希望
+                    </div>
+                    <div style="color: #707070;font-size: 10px;margin: 20px;">
+                        我們會在確認您與農家的資訊後，盡快回復您的申請<br>
+                        申請回覆與更多資訊將會寄送到您的信箱，再次感謝您的支持。
+                    </div>
+                </div>
+
+          
+              
+            </form>
+          </div>
         
 
 
